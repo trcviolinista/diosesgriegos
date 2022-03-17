@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<meta charset="utf-8">
+	<title>Dioses griegos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<style>
+
+		body {
+			background-color: rgb(175, 214, 255);
+			margin: 0.4em;
+		}
+
+		article {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
+
+		p {
+			font-family: verdana;
+			text-align: justify;
+			line-height: 1.6;
+		}
+
+		div {
+			padding-bottom: 0.5em;
+		}
+
+		header h1 {
+			background-color: rgb(0, 42, 87);
+			margin: 0px;
+			color: white;
+			text-align: center;
+			font-size: 5em;
+			font-family: 'Times New Roman';
+		}
+
+		.titulos {
+			color:rgb(129, 9, 0);
+			font-size: 3em;
+			text-decoration: underline;
+			font-family: 'Times New Roman';
+			font-weight: bold;
+			padding-bottom: 0.5em;
+		}
+
+		#lista-contenidos {
+			font-family: Verdana;
+			line-height: 1.3;
+		}
+
+		
+		#lista-contenidos :link {
+			color: blue;
+		}
+
+		#lista-contenidos :visited {
+			color: blue;
+		}
+
+		.navegacion :link {
+			color: rgb(129, 9, 0);
+		}
+
+		.navegacion :visited {
+			color: rgb(129, 9, 0);
+		}
+
+		.navegacion {
+			font-family: 'Times New Roman';
+		}
+
+		footer {
+			margin: 0em;
+			border: 0px;
+			padding-left: 0.5em;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+			background-color: rgb(0, 42, 87);
+			color: white;
+			position: relative;
+		}
+		
+		footer :link {
+			color: white;
+		}
+
+		footer :visited {
+			color: white;
+		}
+
+		#tomas {
+			position: static;
+			float: left;
+			margin-right: 1em;
+		}
+
+		.textoizquierda {
+			text-align: left;
+		}
+
+		.dioses h3 {
+			font-size: 2em;
+			color: rgb(49, 15, 1);
+			text-shadow: rgba(0, 0, 0, 0.534) 0.05em 0.05em;
+			padding-bottom: 0.3em;
+			padding-top: 0.5;
+		}
+
+		.sangria1 p {
+			text-indent: 1em;
+		}
+
+		#lista-contenidos li :hover {
+			color: red
+		}
+
+		.navegacion td :hover {
+			background-color: rgb(175, 214, 255);
+			color: red
+			
+		}
+
+		nav .navegacion {
+			margin: 0em;
+			padding: 0em;
+		}
+
+		nav a {
+			text-align: center;
+			display: block;
+			padding: 1em;
+			padding-left: 5.438em;
+			padding-right: 5.438em;
+			background-color: rgb(111, 178, 255);
+		}
+
+		nav table {
+			width: 100%;
+		}
+
+		nav {
+			position: sticky;
+			top: 0px;
+			overflow: hidden;
+			z-index: 50;
+			
+		}
+
+		aside {
+			border-width: 0.2em;
+			border-style: solid;
+			border-color: black;
+			background-color: rgb(111, 178, 255);
+			margin: 0.1em;
+			padding: 1em;
+			padding-top: 0em;
+			width: 18em;
+			top: 10.3em;
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		aside h3 {
+			margin-top: 0.5em;
+		}
+
+		header,nav {
+			margin: 0.1em;
+			border-width: 0.2em;
+			border-style: solid;
+			border-color: black;
+		}
+
+		.navegacion {
+			background-color: rgb(111, 178, 255);
+		}
+
+		#primeros_parrafos {
+			position: static;
+			float: right;
+			width: 60em;
+			height: fit-content;
+			margin-top: 2em;
+			z-index: 5;
+		}
+
+		.dioses {
+			margin-top: 3.3em;
+		}
+
+		.circulo {
+			position: fixed;
+			top: 90%;
+			left: 95%;
+			width: 3em;
+			height: 3em;
+			background-color: aliceblue;
+			z-index: 60;
+			border-radius: 50%;
+		}
+
+		.arriba {
+			position: absolute;
+			width: inherit;
+			height: auto;
+			top: 50%;
+			transform: translateY(-40%);
+			text-align: center;
+		}
+
+		.arriba {
+			font-size: 2em;
+		}
+
+		.arriba :link {
+			color: black;
+			text-decoration:none;
+		}
+
+		.arriba :visited {
+			color: black;
+			text-decoration:none;
+		}
+
+	</style>
+</head>
+
+<body id="top">
+
+<section>
+	<header class="contenedor">
+		<h1>Los dioses griegos</h1>
+	</header>
+</section>
+
+<nav>
+	<table cellspacing="0" class="navegacion">
+		<tr>
+			<td class="navegacion"> <a href="#este-sitio-web"> Este sitio web </a></td>
+			<td class="navegacion"> <a href="#que-son-los-dioses-griegos"> ¿Qué son los dioses griegos? </a></td>
+			<td class="navegacion"> <a href="#dioses-mas-importantes"> Dioses más importantes </a></td>
+			<td class="navegacion"> <a href="#tabla"> Tabla genealógica</a></td>
+		</tr>
+	</table>
+</nav>
+
+<div id="primeros_parrafos">
+	<section>
+		<article>
+	
+			<h1 class="titulos" id="este-sitio-web"> Este sitio web </h1>
+	
+				<p> Este es un sitio web creado para el aula de tecnología de décimo, Skolmi. <br> <br>
+					Fue creado el 31 de enero de 2022 por Tomás Restrepo y contendrá una descripción de los dioses griegos, tema visto en las otras materias.
+			<br> <br>
+		</article>
+	
+		<article>
+	
+			<h2 class="titulos" id="que-son-los-dioses-griegos"> ¿Qué son los dioses griegos?</h2>
+	
+				 <p> Los dioses griegos son un conjunto muy numeroso (casi infinito) de divinidaddes inmortales. Son parte de la mitología griega la cual fue a su vez parte de la grecia clásica.
+			<br><br> Después de la caida de Grecia, que se dá después de la sobreexpansión planteada por Alejandro Magno, estas divinidades son 
+					 adoptadas por la cultura romana, sin embargo les cambiaron todos los nombres y algunos dioses que eran sumamente inmportantes y
+					 adorados en Grecia, pasaron a ser incluso odiados por Roma, lo mayores ejemplos de esto son: Poseidón, que pasó a ser muy poco importante
+					 bajo la forma romana de Neptuno, Atenea, que era la representación de Grecia por lo que los Romanos le quitaron mucho poder y la convirtieron en Minerva,
+					 y Artemisa, ya que los Romanos no veían bien a las doncellas vígenes de por vida y decidieron volverla una diosa de baja relevancia con el nombre de Diana.
+	
+				</p>
+			<br><br>
+		</article>
+	</div>
+
+	
+	<div>
+		<aside>
+			<h3 class="titulos">  Lista de contenidos</h3>
+
+			<ul id="lista-contenidos">	
+				<li> <a href="#este-sitio-web"> Este sitio web </a></li>
+				<li> <a href="#que-son-los-dioses-griegos"> ¿Qué son los dioses griegos? </a></li>
+				<li> <a href="#dioses-mas-importantes"> Dioses más importantes: </a></li>
+					<ul>
+						<li> <a href="#zeus"> Zeus </a></li>
+						<li> <a href="#poseidon"> Poseidón </a></li>
+						<li> <a href="#hades"> Hades </a></li>
+						<li> <a href="#hera"> Hera </a></li>
+						<li> <a href="#demeter"> Deméter </a></li>
+						<li> <a href="#hestia"> Hestia </a></li>
+						<li> <a href="#atenea"> Atenea </a></li>
+						<li> <a href="#afrodita"> Afrodita </a></li>
+						<li> <a href="#ares"> Ares </a></li>
+						<li> <a href="#hefesto"> Hefesto </a></li>
+						<li> <a href="#apolo"> Apolo </a></li>
+						<li> <a href="#artemisa"> Artemisa </a></li>
+						<li> <a href="#hermes"> Hermes </a></li>
+						<li> <a href="#dioniso"> Dioniso </a></li>
+					</ul>
+				<li> <a href="#tabla"> Tabla genealógica</a></li>
+				<li> <a href="#carouselExampleDark"> Carrusel genealógico</a></li>
+			</ul>
+		</aside>
+	</div>
+
+
+
+	<article class="dioses">
+
+		<h2 class="titulos" id="dioses-mas-importantes"> Dioses más importantes</h2>
+
+		<p> En esta sección veremos algunos de los muchísimos dioses griegos incluyendo todos los olímpicos y los que por alguna otra razón quiero destacar. </p>
+
+		<div class="sangria1">
+			<!--Zeus-->
+			<h3 id="zeus"> Zeus</h3>
+
+				<p> Zeus es el dios más importante de la mitología griega, a pesar de que muchas personas adoraran a otras divinidades incluso por encima de él.
+					Fue el último hijo de Cronos y Rea. Cronos había exigido a Rea que le entragara a todos sus hijos para él comérselos y de esta
+					manera evitar ser derrotado por ellos.  Sin embargo Rea no cumplió esta orden con Zeus y le entregó a Cronos una piedra. De esta manera
+					Zeus se salvó y creció escondido y criado por las nifas de Creta y bajo la protección de su abuela Gea. 
+					<br> <br> Zeus se convirtió en el rey del universo y cobró aún más importancia bajo su forma romana Júpiter. Tuvo muchos hijos dioses y muchos otros semidioses.
+				</p>
+
+			<!--Poseidón-->
+			<h3 id="poseidon"> Poseidón</h3>
+
+				<p> Poseidón fue el segundo dios hobre y el quinto en general. Cuando nació fue tragado por su padre Cronos y tuvo que 
+					esperar a que Zeus lo liberara al igual que sus otros hermanos. Cuando vencieron a Cronos en la repartición del mundo le tocó ser el señor de los mares. 
+					<br> <br> Poseidón se casó con Anfítitre, una hija de Oceano el titán del mar, y siempre se le recuerda por su fuerte temperamento, que se refleja 
+					en las tempestades marinas. Perdió mucha relevancia en su forma romana, Neptuno, ya que el mar no era muy importante para ellos.
+				</p>
+
+			<!--Hades-->
+			<h3 id="hades"> Hades</h3>
+
+				<p> Hades es el mayor de los tres hermanos. Sin embargo en la repartición del mundo le tocó el inframundo. Un lugar sumamente oscuro
+					que lo terminó de comvertir en el dios oscuro que ya era. Hades nunca fue un dios del olimpo a pesar de lo poderoso que era, de hecho solo tenía permitido
+					ir al olimpo en situaciones especiales o el 21 de diciembre, el día más corto y oscuro del año.  
+					<br> <br> Hades acosó a Perséfone hasta casarse con ella, esto generó las estaciones por otros motivos que explicaré en Deméter. Es considerado un dios muy
+					misterioso y se volvió incluso más oscuro como Plutón, su forma romana.
+				</p>
+
+			<!--Hera-->
+			<h3 id="hera"> Hera</h3>
+
+				<p> Hera es la menor de las tres hermanas hijas de Cronos. En un principio Rea pensó que tal vez Cronos no se la comería ya que era especialmente
+					linda y tierna, sin embargo al ser una diosa fue devorada inmediatamente por su padre. <br> <br>
+					Hera fue la diosa más bella del olimpo hasta la llegada de afrodita, por ello era deseada por muchos dioses. Sin emabrgo fue Zeus quien se la quedó al final
+					y la convirtió así en la reina del olimpo. <br> <br> Además de esto Hera es la diosa griega de la familia, el matrimonio, la maternidad y las mujeres. Pasó a ser Juno 
+					para los romanos y siempre se le tiene muy en cuenta por lo celosa que era con Zeus y todos los problemas que le generó a las otras "novias" de Zeus, sus hijos dioses y semidioses. 
+				</p>
+
+
+			<!--Deméter-->
+			<h3 id="demeter"> Deméter</h3>
+
+				<p> Deméter es la diosa griega de la agricultura, la cosecha, la fertilidad y las estaciones, hija de Cronos y Rea, y madre de Perséfone. Su forma romana es Ceres. 
+					<br> <br> Deméter siempre protegió los cultivos y las grandes plagas se debían a los momentos en los que ella estaba débil o de mal humor. 
+					<br> <br> Cuando perséfone fue raptada por Hades Deméter cayó en depresión y los cultivos se secaron. Los humanos desesperados buscaron ayuda en los dioses, sin embargo Perséfone
+					ya estaba obligada a permanecer en el inframundo de Hades. Al no encontrar otra solución, Zeus se vió obligado a hacer que Hades dejara pasar a Perséfone dos tercios del año con su madre, 
+					y otro tercio con él. De ahí nacen las estaciones para los griegos, primavera y verano cuando Perséfone estaba con Deméter e invierno cuando estaba con Hades (el otoño no existía).
+				</p>
+
+			<!--Hestia-->
+			<h3 id="hestia"> Hestia</h3>
+
+				<p> Hestia es la primera diosa. Es la diosa del hogar, el recto ordenamiento de la vida doméstica, la salud, y la familia. Su forma romana es Vesta. Hestia fue en un principio una diosa olímpica.
+					Sin embargo cuando llegó Dioniso, se retiró voluntariamente para no crear discordia entre los dioses, ya que en teoría solo podían haber doce olímpicos. Esto creo el desquilibrio en el olimpo 
+					que creó la diferencia entre hombres y mujeres. Una frase que describe muy bien a esta diosa es la dicha en el libro "El último héroe del Olipo"
+					de Rick Riordan:  <em> "Estoy aquí porque cuando todo lo demás falla, cuando todos los otros poderosos dioses van a la guerra, yo soy todo lo que queda. Hogar. Soy la última de los olímpicos."</em>
+				</p>
+
+			<!--Atenea-->
+			<h3 id="atenea"> Atenea</h3>
+
+				<p> Atenea es hija del dios Zeus y la titánide Metis. Cuando Metis estaba embarazada de su hija, Zeus se enteró de que su próximo hijo con Metis, un varón, estaba destinado a ser más grande que él. 
+					Al igual que su padre y abuelo, Zeus trató de evitar ese destino y rápidamente procedió a tragarse a Metis entera, aún sin saber si su hijo con ella sería o no varón, junto con su hija aún por nacer. 
+					Al ser inmortal, Metis no murió y dio a luz a Atenea en el estómago de Zeus. Con el tiempo, Metis se desvaneció en pensamientos puros y se convirtió en una pequeña y molesta voz en la mente de Zeus. 
+					Atenea, por su parte, creció dentro del cuerpo de su padre, de la misma manera que los olímpicos lo hicieron en el estómago de Cronos. Cuando creció, Atenea comenzó a buscar una manera de salir y 
+					después de pensarlo, decidió disolverse en pensamientos -un truco que le enseño su madre- y viajó hacia el cerebro de Zeus, lugar donde se reformó. Al final a Zeus le dió tal dolor de cabeza que Hefesto 
+					tuvo que romperle el craneo para que por ahí saliera Atenea. 
+					<br><br> Atenea es la diosa griega de la sabiduría, la estrategia, la artesanía y la batalla. Fue la patrona de Atenas por lo que los romanos intentaron desaparecerla de su mitología. Además para ellos 
+					una mujer no podía ser la diosa de la guerra por lo que dejaron solo a Marte (Ares). Sin embargo Atenea siguió existiendo de una forma mucho menos relevante bajo el nombre de Minerva.
+					<br><br> Atenea es conocida por su rivalidad con Poseidón y con Ares.
+				</p>
+
+			<!--Afrodita-->
+			<h3 id="afrodita"> Afrodita</h3>
+
+				<p> Afrodita es la diosa griega del amor, la belleza y el deseo. Nació de los restos de Urano tirados por los titanes al mar. Cuando tomó forma y fue al olimpo, todos querían casarse con ella. Como medida 
+					final Hera decidió que se casaría con su hijo Hefesto. Sin embargo Hefesto es el dios más feo del olimpo y Afrodita nunca lo quiso realmente. Lo empezó a traicionar con Ares y al final Hefesto les hizo 
+					una trampa para así pedir su divorcio. Su forma romana es Venus.
+				</p>
+
+			<!--Ares-->
+			<h3 id="ares"> Ares</h3>
+
+				<p> Por redactar.. .</p>
+
+			<!--Hefesto-->
+			<h3 id="hefesto"> Hefesto</h3>
+
+				<p> Por redactar.. .</p>
+				
+			<!--Apolo-->
+			<h3 id="apolo"> Apolo</h3>
+
+				<p> Por redactar.. .</p>
+
+			<!--Artemisa-->
+			<h3 id="artemisa"> Artemisa</h3>
+
+				<p> Por redactar.. .</p>
+			
+			<!--Hermes-->
+			<h3 id="hermes"> Hermes</h3>
+
+				<p> Por redactar.. .</p>
+
+			<!--Dioniso-->
+			<h3 id="dioniso"> Dioniso</h3>
+
+				<p> Por redactar.. .</p>
+			</div>
+	</article>
+</section>
+
+<section>
+	<article>
+
+		<h2 class= titulos id="tabla"> Tabla genealógica</h2>
+
+		<table width="100%">
+		
+			<thead class="textoizquierda">
+			<tr> <!--Títulos-->
+				<th><strong> Primera generación (creadores) </strong></th>
+				<!--Gea y Urano-->
+
+				<th><strong> Segunda generación (Titantes) </strong></th>
+				<!--Cronos y hermanos-->
+
+				<th><strong> Tercera generación (dioses) </strong></th>
+				<!--hijos de titanes-->
+
+				<th><strong> Cuarta generación y posteriores (dioses) </strong></th>
+				<!--dioses hijos de dioses-->
+
+			</tr>
+			</thead>
+
+			<tbody class="textoizquierda">
+			<tr>
+				<td> Caos </td>
+				<td> Océano </td>
+				<td> Hestia </td>
+				<td> Ares </td>
+			</tr>
+
+			<tr>
+				<td> Gea </td>
+				<td> Heprión </td>
+				<td> Deméter </td>
+				<td> Atenea </td>
+			</tr>
+
+			<tr>
+				<td> Urano </td>
+				<td> Ceo </td>
+				<td> Hera </td>
+				<td> Hefesto </td>
+			</tr>
+			
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Cronos </td>
+				<td> Hades </td>
+				<td> Apolo </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Crío </td>
+				<td> Poseidón </td>
+				<td> Artemisa </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Japeto </td>
+				<td> Zeus </td>
+				<td> Hermes </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Mnemósime </td>
+				<td> <!--no hay más--> </td>
+				<td> Dioniso </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Tetis </td>
+				<td> <!--no hay más--> </td>
+				<td> Perséfone </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Tea </td>
+				<td> <!--no hay más--> </td>
+				<td> Eros </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Rea </td>
+				<td> <!--no hay más--> </td>
+				<td> Tánatos </td>
+			</tr>
+			
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Temis </td>
+				<td> <!--no hay más--> </td>
+				<td> Iris </td>
+
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> Febe </td>
+				<td> <!--no hay más--> </td>
+				<td> Anfítitre </td>
+			</tr>
+
+			<tr>
+				<td> <!--no hay más--> </td>
+				<td> <!--no hay más--> </td>
+				<td> <!--no hay más--> </td>
+				<td> Y muchos muchos más... </td>
+			</tr>
+
+		</tbody>
+		</table>
+		<br> <br>
+	</article>
+
+	<!--carusel de fotos con Bootstrap-->
+	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		</div>
+		<div class="carousel-inner">
+		  <div class="carousel-item active" data-bs-interval="2000">
+			<img src="https://pequenoblogtecnologicoart.files.wordpress.com/2022/03/arbol-genealocc81gico-1.jpg?w=1024" class="d-block w-100" alt="Árbol genealógico">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="titulos"> Árbol genealógico </h5>
+			</div>
+		  </div>
+
+		<div class="carousel-item" data-bs-interval="2000">
+			<img src="https://pequenoblogtecnologicoart.files.wordpress.com/2022/03/copia-de-arbol-genealocc81gico-3-2.jpg?w=1024" class="d-block w-100" alt="Gea y Urano">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="titulos"> Gea y Urano</h5>
+
+			</div>
+		</div>
+
+		<div class="carousel-item" data-bs-interval="2000">
+		  <img src="https://pequenoblogtecnologicoart.files.wordpress.com/2022/03/copia-de-arbol-genealocc81gico-4.jpg?w=1024" class="d-block w-100" alt="Titanes">
+		  <div class="carousel-caption d-none d-md-block">
+			<h5 class="titulos">Titanes</h5>
+		  </div>
+		</div>
+
+		  <div class="carousel-item" data-bs-interval="2000">
+			<img src="https://pequenoblogtecnologicoart.files.wordpress.com/2022/03/copia-de-arbol-genealocc81gico-2.jpg?w=1024" class="d-block w-100" alt="Dioses olímpicos">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="titulos">Dioses olímpicos</h5>
+			</div>
+		  </div>
+
+		  <div class="carousel-item" data-bs-interval="2000">
+			<img src="https://pequenoblogtecnologicoart.files.wordpress.com/2022/03/copia-de-arbol-genealocc81gico-3-1.jpg?w=1024" class="d-block w-100" alt="Otros dioses">
+			<div class="carousel-caption d-none d-md-block">
+			  <h5 class="titulos"> Otros dioses</h5>
+			</div>
+		</div>
+
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+	  
+</section>
+
+<footer> 
+	<p> 		
+		<img id="tomas" src=https://1.bp.blogspot.com/-ZQfpXtoO6v0/YCelE1uopSI/AAAAAAAA7h0/st5ogT6BRiYxspG7SRoQmMlLHGQOhWSqwCLcBGAsYHQ/s1280/Toma%25CC%2581s%2BRestrepo.jpeg alt="Tomás Restrepo" height="80">
+		<em> <strong> Hecho por Tomás Restrepo Cardona </em> </strong>
+		<br> Correo: trcviolinista@gmail.com
+		<br> <a href="https://www.skolmi.com/">Skolmi</a> 
+	</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
